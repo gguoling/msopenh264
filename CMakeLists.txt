@@ -50,9 +50,9 @@ list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 include(CheckIncludeFileCXX)
 check_include_file_cxx("stdbool.h" HAVE_STDBOOL_H)
 
-find_package(Mediastreamer2 REQUIRED)
-find_package(ortp REQUIRED)
-find_package(bctoolbox REQUIRED)
+find_package(Mediastreamer2 CONFIG REQUIRED)
+find_package(ortp CONFIG REQUIRED)
+find_package(bctoolbox CONFIG REQUIRED)
 
 find_package(OpenH264 REQUIRED)
 
